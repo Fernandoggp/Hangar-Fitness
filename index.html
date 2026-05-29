@@ -8,7 +8,7 @@
   <meta property="og:title" content="Hangar Fitness – Transforme seu corpo. Supere seus limites." />
   <meta property="og:description" content="Academia premium com diversas modalidades de treino, equipamentos modernos e ambiente motivador." />
   <meta property="og:type" content="website" />
-  <meta name="color-scheme" content="dark only">
+
   <title>Hangar Fitness – Transforme seu corpo. Supere seus limites.</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,13 +36,17 @@
       --radius:  12px;
       --trans:   0.3s ease;
     }
-    html { scroll-behavior: smooth; }
+    html { 
+      scroll-behavior: smooth; 
+      forced-color-adjust: none !important;
+    }
     body {
       background: var(--black);
       color: var(--white);
       font-family: var(--ff-body);
       overflow-x: hidden;
       line-height: 1.6;
+      forced-color-adjust: none !important; /* Protege textos, fundos e botões */
     }
     a { text-decoration: none; color: inherit; }
     img { max-width: 100%; display: block; }
